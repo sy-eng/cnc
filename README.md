@@ -1,4 +1,4 @@
-#CNC
+# CNC
 
 These are setting file for machinekit for CNC3060 with original board.
 
