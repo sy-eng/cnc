@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name cncSpindleControl-rescue)(type Legacy)(uri ${KIPRJMOD}/cncSpindleControl-rescue.lib)(options "")(descr ""))
+)

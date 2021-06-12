@@ -1,0 +1,701 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# AE-L6470DIP28_AE-L6470DIP28
+#
+DEF AE-L6470DIP28_AE-L6470DIP28 U 0 40 Y Y 1 F N
+F0 "U" -350 850 50 H V C CNN
+F1 "AE-L6470DIP28_AE-L6470DIP28" -100 750 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+S -400 700 400 -700 0 1 0 N
+X OUT1A 1 -500 650 100 R 50 50 1 1 O
+X CP 10 -500 -250 100 R 50 50 1 1 O
+X VBOOT 11 -500 -350 100 R 50 50 1 1 I
+X VSB1 12 -500 -450 100 R 50 50 1 1 W
+X PGND1 13 -500 -550 100 R 50 50 1 1 W
+X OUT1B 14 -500 -650 100 R 50 50 1 1 O
+X OUT2B 15 500 -650 100 L 50 50 1 1 O
+X VSB2 16 500 -550 100 L 50 50 1 1 W
+X Vdd 17 500 -450 100 L 50 50 1 1 W
+X SDO 18 500 -350 100 L 50 50 1 1 O
+X CK 19 500 -250 100 L 50 50 1 1 I
+X VSA1 2 -500 550 100 R 50 50 1 1 W
+X SDI 20 500 -150 100 L 50 50 1 1 I
+X DGND 21 500 -50 100 L 50 50 1 1 W
+X BUSY(INV) 22 500 50 100 L 50 50 1 1 C
+X CS(INV) 23 500 150 100 L 50 50 1 1 I
+X FLAG(INV) 24 500 250 100 L 50 50 1 1 C
+X STCK 25 500 350 100 L 50 50 1 1 I
+X VSA2 26 500 450 100 L 50 50 1 1 I
+X PGND2 27 500 550 100 L 50 50 1 1 W
+X OUT2A 28 500 650 100 L 50 50 1 1 O
+X RST(INV) 3 -500 450 100 R 50 50 1 1 I
+X SW 4 -500 350 100 R 50 50 1 1 I
+X ADCIN 5 -500 250 100 R 50 50 1 1 I
+X Vreg 6 -500 150 100 R 50 50 1 1 w
+X OSCIN 7 -500 50 100 R 50 50 1 1 I
+X OSCOUT 8 -500 -50 100 R 50 50 1 1 O
+X AGND 9 -500 -150 100 R 50 50 1 1 W
+ENDDRAW
+ENDDEF
+#
+# Device_C
+#
+DEF Device_C C 0 10 N Y 1 F N
+F0 "C" 25 100 50 H V L CNN
+F1 "Device_C" 25 -100 50 H V L CNN
+F2 "" 38 -150 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ C_*
+$ENDFPLIST
+DRAW
+P 2 0 1 20 -80 -30 80 -30 N
+P 2 0 1 20 -80 30 80 30 N
+X ~ 1 0 150 110 D 50 50 1 1 P
+X ~ 2 0 -150 110 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Device_CP
+#
+DEF Device_CP C 0 10 N Y 1 F N
+F0 "C" 25 100 50 H V L CNN
+F1 "Device_CP" 25 -100 50 H V L CNN
+F2 "" 38 -150 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ CP_*
+$ENDFPLIST
+DRAW
+S -90 20 90 40 0 1 0 N
+S 90 -20 -90 -40 0 1 0 F
+P 2 0 1 0 -70 90 -30 90 N
+P 2 0 1 0 -50 110 -50 70 N
+X ~ 1 0 150 110 D 50 50 1 1 P
+X ~ 2 0 -150 110 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Device_D
+#
+DEF Device_D D 0 40 N N 1 F N
+F0 "D" 0 100 50 H V C CNN
+F1 "Device_D" 0 -100 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ TO-???*
+ *_Diode_*
+ *SingleDiode*
+ D_*
+$ENDFPLIST
+DRAW
+P 2 0 1 8 -50 50 -50 -50 N
+P 2 0 1 0 50 0 -50 0 N
+P 4 0 1 8 50 50 50 -50 -50 0 50 50 N
+X K 1 -150 0 100 R 50 50 1 1 P
+X A 2 150 0 100 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Device_R
+#
+DEF Device_R R 0 0 N Y 1 F N
+F0 "R" 80 0 50 V V C CNN
+F1 "Device_R" 0 0 50 V V C CNN
+F2 "" -70 0 50 V I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ R_*
+$ENDFPLIST
+DRAW
+S -40 -100 40 100 0 1 10 N
+X ~ 1 0 150 50 D 50 50 1 1 P
+X ~ 2 0 -150 50 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Mechanical_MountingHole
+#
+DEF Mechanical_MountingHole H 0 40 Y Y 1 F N
+F0 "H" 0 200 50 H V C CNN
+F1 "Mechanical_MountingHole" 0 125 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ MountingHole*
+$ENDFPLIST
+DRAW
+C 0 0 50 0 1 50 N
+ENDDRAW
+ENDDEF
+#
+# SamacSys_Parts_2N7000TA
+#
+DEF SamacSys_Parts_2N7000TA Q 0 30 Y Y 1 F N
+F0 "Q" 450 150 50 H V L CNN
+F1 "SamacSys_Parts_2N7000TA" 450 50 50 H V L CNN
+F2 "TO-92_3L_(AMMO)" 450 -50 50 H I L CNN
+F3 "http://docs-emea.rs-online.com/webdocs/0f9a/0900766b80f9a390.pdf" 450 -150 50 H I L CNN
+F4 "MOSFET N Channel 60V 0.2A  3 Pin TO92" 450 -250 50 H I L CNN "Description"
+F5 "ON Semiconductor" 450 -450 50 H I L CNN "Manufacturer_Name"
+F6 "2N7000TA" 450 -550 50 H I L CNN "Manufacturer_Part_Number"
+F7 "512-2N7000TA" 450 -650 50 H I L CNN "Mouser Part Number"
+F8 "https://www.mouser.co.uk/ProductDetail/ON-Semiconductor-Fairchild/2N7000TA?qs=iN0KuJO79KZfCWVKA48bEg%3D%3D" 450 -750 50 H I L CNN "Mouser Price/Stock"
+F9 "2N7000TA" 450 -850 50 H I L CNN "Arrow Part Number"
+F10 "https://www.arrow.com/en/products/2n7000ta/on-semiconductor" 450 -950 50 H I L CNN "Arrow Price/Stock"
+DRAW
+C 250 100 150 0 1 10 N
+P 2 0 1 6 230 -20 230 20 N
+P 2 0 1 6 230 0 300 0 N
+P 2 0 1 6 230 80 230 120 N
+P 2 0 1 6 230 220 230 180 N
+P 2 0 1 6 300 100 230 100 N
+P 2 0 1 6 300 100 300 -100 N
+P 2 0 1 6 300 200 230 200 N
+P 2 0 1 6 300 200 300 300 N
+P 3 0 1 6 100 0 200 0 200 200 N
+P 4 0 1 10 230 100 270 120 270 80 230 100 F
+X ~ 1 300 -200 100 U 50 50 0 0 P
+X ~ 2 0 0 100 R 50 50 0 0 P
+X ~ 3 300 400 100 D 50 50 0 0 P
+ENDDRAW
+ENDDEF
+#
+# SamacSys_Parts_ARD-NANO30NP
+#
+DEF SamacSys_Parts_ARD-NANO30NP IC 0 30 Y Y 1 F N
+F0 "IC" 1250 300 50 H V L CNN
+F1 "SamacSys_Parts_ARD-NANO30NP" 1250 200 50 H V L CNN
+F2 "ARDNANO30NP" 1250 100 50 H I L CNN
+F3 "http://www.mouser.com/datasheet/2/595/Arduino_Nano3_0-220057.pdf" 1250 0 50 H I L CNN
+F4 "Development Boards & Kits - AVR Arduino Nano 3.1 W/ATMEGA328 NO-PIN" 1250 -100 50 H I L CNN "Description"
+F5 "5" 1250 -200 50 H I L CNN "Height"
+F6 "Gravitech" 1250 -300 50 H I L CNN "Manufacturer_Name"
+F7 "ARD-NANO30NP" 1250 -400 50 H I L CNN "Manufacturer_Part_Number"
+F8 "992-ARD-NANO30NP" 1250 -500 50 H I L CNN "Mouser Part Number"
+F9 "https://www.mouser.co.uk/ProductDetail/Gravitech/ARD-NANO30NP?qs=Vxac6xGyzPlh7in3DWNTbQ%3D%3D" 1250 -600 50 H I L CNN "Mouser Price/Stock"
+DRAW
+P 5 0 1 6 200 100 1200 100 1200 -1700 200 -1700 200 100 N
+X D1/TX 1 0 -100 200 R 50 50 0 0 P
+X D7 10 0 -1000 200 R 50 50 0 0 P
+X D8 11 0 -1100 200 R 50 50 0 0 P
+X D9 12 0 -1200 200 R 50 50 0 0 P
+X D10 13 0 -1300 200 R 50 50 0 0 P
+X D11 14 0 -1400 200 R 50 50 0 0 P
+X D12 15 0 -1500 200 R 50 50 0 0 P
+X VIN 16 1400 -100 200 L 50 50 0 0 P
+X GND_2 17 1400 -200 200 L 50 50 0 0 P
+X RESET_2 18 1400 -300 200 L 50 50 0 0 P
+X +5V 19 1400 -400 200 L 50 50 0 0 P
+X D0/RX 2 0 -200 200 R 50 50 0 0 P
+X A7 20 1400 -500 200 L 50 50 0 0 P
+X A6 21 1400 -600 200 L 50 50 0 0 P
+X A5 22 1400 -700 200 L 50 50 0 0 P
+X A4 23 1400 -800 200 L 50 50 0 0 P
+X A3 24 1400 -900 200 L 50 50 0 0 P
+X A2 25 1400 -1000 200 L 50 50 0 0 P
+X A1 26 1400 -1100 200 L 50 50 0 0 P
+X A0 27 1400 -1200 200 L 50 50 0 0 P
+X AREF 28 1400 -1300 200 L 50 50 0 0 P
+X 3V3 29 1400 -1400 200 L 50 50 0 0 P
+X RESET_1 3 0 -300 200 R 50 50 0 0 P
+X D13 30 1400 -1500 200 L 50 50 0 0 P
+X GND_1 4 0 -400 200 R 50 50 0 0 P
+X D2 5 0 -500 200 R 50 50 0 0 P
+X D3 6 0 -600 200 R 50 50 0 0 P
+X D4 7 0 -700 200 R 50 50 0 0 P
+X D5 8 0 -800 200 R 50 50 0 0 P
+X D6 9 0 -900 200 R 50 50 0 0 P
+X MH1 MH1 0 0 200 R 50 50 0 0 P
+X MH2 MH2 0 -1600 200 R 50 50 0 0 P
+X MH3 MH3 1400 -1600 200 L 50 50 0 0 P
+X MH4 MH4 1400 0 200 L 50 50 0 0 P
+ENDDRAW
+ENDDEF
+#
+# SamacSys_Parts_BS2P-SHF-1AA__LF__SN_
+#
+DEF SamacSys_Parts_BS2P-SHF-1AA__LF__SN_ J 0 30 Y Y 1 F N
+F0 "J" 650 300 50 H V L CNN
+F1 "SamacSys_Parts_BS2P-SHF-1AA__LF__SN_" 650 200 50 H V L CNN
+F2 "BS2PSHF1AALFSN" 650 100 50 H I L CNN
+F3 "http://www.jst-mfg.com/product/pdf/eng/eNH.pdf" 650 0 50 H I L CNN
+F4 "JST NH Series, 2.5mm Pitch 2 Way 1 Row Right Angle PCB Header, Solder Termination, 3A" 650 -100 50 H I L CNN "Description"
+F5 "5" 650 -200 50 H I L CNN "Height"
+F6 "JST (JAPAN SOLDERLESS TERMINALS)" 650 -300 50 H I L CNN "Manufacturer_Name"
+F7 "BS2P-SHF-1AA (LF)(SN)" 650 -400 50 H I L CNN "Manufacturer_Part_Number"
+DRAW
+P 5 0 1 6 200 100 600 100 600 -200 200 -200 200 100 N
+X 1 1 0 0 200 R 50 50 0 0 P
+X 2 2 0 -100 200 R 50 50 0 0 P
+ENDDRAW
+ENDDEF
+#
+# SamacSys_Parts_BS3P-SHF-1AA__LF__SN_
+#
+DEF SamacSys_Parts_BS3P-SHF-1AA__LF__SN_ J 0 30 Y Y 1 F N
+F0 "J" 650 300 50 H V L CNN
+F1 "SamacSys_Parts_BS3P-SHF-1AA__LF__SN_" 650 200 50 H V L CNN
+F2 "HDRRA3W64P0X250_1X3_750X600X560P" 650 100 50 H I L CNN
+F3 "https://docs-emea.rs-online.com/webdocs/082f/0900766b8082f51a.pdf" 650 0 50 H I L CNN
+F4 "JST HVQ Series, 2.5mm Pitch 3 Way 1 Row Right Angle PCB Header, Solder Termination, 3A" 650 -100 50 H I L CNN "Description"
+F5 "5.6" 650 -200 50 H I L CNN "Height"
+F6 "JST (JAPAN SOLDERLESS TERMINALS)" 650 -300 50 H I L CNN "Manufacturer_Name"
+F7 "BS3P-SHF-1AA (LF)(SN)" 650 -400 50 H I L CNN "Manufacturer_Part_Number"
+DRAW
+P 5 0 1 6 200 100 600 100 600 -300 200 -300 200 100 N
+X 1 1 0 0 200 R 50 50 0 0 P
+X 2 2 0 -100 200 R 50 50 0 0 P
+X 3 3 0 -200 200 R 50 50 0 0 P
+ENDDRAW
+ENDDEF
+#
+# SamacSys_Parts_BS6P-SHF-1AA__LF__SN_
+#
+DEF SamacSys_Parts_BS6P-SHF-1AA__LF__SN_ J 0 30 Y Y 1 F N
+F0 "J" 650 300 50 H V L CNN
+F1 "SamacSys_Parts_BS6P-SHF-1AA__LF__SN_" 650 200 50 H V L CNN
+F2 "HDRRA6W64P0X250_1X6_1500X600X560P" 650 100 50 H I L CNN
+F3 "http://www.jst-mfg.com/product/pdf/eng/eNH.pdf" 650 0 50 H I L CNN
+F4 "JST HVQ Series, 2.5mm Pitch 6 Way 1 Row Right Angle PCB Header, Solder Termination, 3A" 650 -100 50 H I L CNN "Description"
+F5 "5.6" 650 -200 50 H I L CNN "Height"
+F6 "JST (JAPAN SOLDERLESS TERMINALS)" 650 -300 50 H I L CNN "Manufacturer_Name"
+F7 "BS6P-SHF-1AA (LF)(SN)" 650 -400 50 H I L CNN "Manufacturer_Part_Number"
+DRAW
+P 5 0 1 6 200 100 600 100 600 -600 200 -600 200 100 N
+X 1 1 0 0 200 R 50 50 0 0 P
+X 2 2 0 -100 200 R 50 50 0 0 P
+X 3 3 0 -200 200 R 50 50 0 0 P
+X 4 4 0 -300 200 R 50 50 0 0 P
+X 5 5 0 -400 200 R 50 50 0 0 P
+X 6 6 0 -500 200 R 50 50 0 0 P
+ENDDRAW
+ENDDEF
+#
+# SamacSys_Parts_EKI04027
+#
+DEF SamacSys_Parts_EKI04027 Q 0 30 Y Y 1 F N
+F0 "Q" 450 150 50 H V L CNN
+F1 "SamacSys_Parts_EKI04027" 450 50 50 H V L CNN
+F2 "TO254P470X990X1965-3P" 450 -50 50 H I L CNN
+F3 "http://www.semicon.sanken-ele.co.jp/sk_content/eki04027_ds_en.pdf" 450 -150 50 H I L CNN
+F4 "40 V, 85 A, 2.6 m Low RDS(ON) N ch Trench Power MOSFET" 450 -250 50 H I L CNN "Description"
+F5 "4.7" 450 -350 50 H I L CNN "Height"
+F6 "SANKEN ELECTRIC CO." 450 -450 50 H I L CNN "Manufacturer_Name"
+F7 "EKI04027" 450 -550 50 H I L CNN "Manufacturer_Part_Number"
+DRAW
+C 250 100 150 0 1 10 N
+P 2 0 1 6 230 -20 230 20 N
+P 2 0 1 6 230 0 300 0 N
+P 2 0 1 6 230 80 230 120 N
+P 2 0 1 6 230 220 230 180 N
+P 2 0 1 6 300 100 230 100 N
+P 2 0 1 6 300 100 300 -100 N
+P 2 0 1 6 300 200 230 200 N
+P 2 0 1 6 300 200 300 300 N
+P 3 0 1 6 100 0 200 0 200 200 N
+P 4 0 1 10 230 100 270 120 270 80 230 100 F
+X ~ 1 0 0 100 R 50 50 0 0 P
+X ~ 2 300 400 100 D 50 50 0 0 P
+X ~ 3 300 -200 100 U 50 50 0 0 P
+ENDDRAW
+ENDDEF
+#
+# SamacSys_Parts_GF063P1
+#
+DEF SamacSys_Parts_GF063P1 VR 0 30 Y Y 1 F N
+F0 "VR" 650 300 50 H V L CNN
+F1 "SamacSys_Parts_GF063P1" 650 200 50 H V L CNN
+F2 "GF063P1" 650 100 50 H I L CNN
+F3 "https://tocos.com/uploads/media/products/0001/01/1da0d8e992e1a977fb495fcf26612bf916a3a9cf.pdf" 650 0 50 H I L CNN
+F4 "1/4 Square, Single-Turn, Through-Hole Sealed Cermet Trimmers" 650 -100 50 H I L CNN "Description"
+F5 "5" 650 -200 50 H I L CNN "Height"
+F6 "Tocos" 650 -300 50 H I L CNN "Manufacturer_Name"
+F7 "GF063P1" 650 -400 50 H I L CNN "Manufacturer_Part_Number"
+DRAW
+P 5 0 1 6 200 100 600 100 600 -200 200 -200 200 100 N
+X 1 1 0 0 200 R 50 50 0 0 P
+X 2 2 800 0 200 L 50 50 0 0 P
+X 3 3 0 -100 200 R 50 50 0 0 P
+ENDDRAW
+ENDDEF
+#
+# SamacSys_Parts_LM336BZ-2.5_NOPB
+#
+DEF SamacSys_Parts_LM336BZ-2.5_NOPB IC 0 30 Y Y 1 F N
+F0 "IC" 750 300 50 H V L CNN
+F1 "SamacSys_Parts_LM336BZ-2.5_NOPB" 750 200 50 H V L CNN
+F2 "LM336BZ25NOPB" 750 100 50 H I L CNN
+F3 "http://www.ti.com/lit/gpn/lm336-2.5-n" 750 0 50 H I L CNN
+F4 "Voltage Reference Diode" 750 -100 50 H I L CNN "Description"
+F5 "5.2" 750 -200 50 H I L CNN "Height"
+F6 "Texas Instruments" 750 -300 50 H I L CNN "Manufacturer_Name"
+F7 "LM336BZ-2.5/NOPB" 750 -400 50 H I L CNN "Manufacturer_Part_Number"
+F8 "926-LM336BZ-2.5/NOPB" 750 -500 50 H I L CNN "Mouser Part Number"
+F9 "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/LM336BZ-25-NOPB?qs=X1J7HmVL2ZFlz3rTAEKCzQ%3D%3D" 750 -600 50 H I L CNN "Mouser Price/Stock"
+F10 "LM336BZ-2.5/NOPB" 750 -700 50 H I L CNN "Arrow Part Number"
+F11 "https://www.arrow.com/en/products/lm336bz-2.5nopb/texas-instruments" 750 -800 50 H I L CNN "Arrow Price/Stock"
+DRAW
+P 5 0 1 6 200 100 700 100 700 -200 200 -200 200 100 N
+X ADJ 1 0 0 200 R 50 50 0 0 P
+X + 2 900 0 200 L 50 50 0 0 P
+X - 3 0 -100 200 R 50 50 0 0 P
+ENDDRAW
+ENDDEF
+#
+# SamacSys_Parts_LM35DZ_NOPB
+#
+DEF SamacSys_Parts_LM35DZ_NOPB IC 0 30 Y Y 1 F N
+F0 "IC" 950 300 50 H V L CNN
+F1 "SamacSys_Parts_LM35DZ_NOPB" 950 200 50 H V L CNN
+F2 "LP0003A" 950 100 50 H I L CNN
+F3 "http://www.ti.com/lit/gpn/lm35" 950 0 50 H I L CNN
+F4 "+/-0.5C Temperature Sensor with Analog Output with 30V Capability" 950 -100 50 H I L CNN "Description"
+F5 "Texas Instruments" 950 -300 50 H I L CNN "Manufacturer_Name"
+F6 "LM35DZ/NOPB" 950 -400 50 H I L CNN "Manufacturer_Part_Number"
+F7 "926-LM35DZ/NOPB" 950 -500 50 H I L CNN "Mouser Part Number"
+F8 "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/LM35DZ-NOPB?qs=QbsRYf82W3F5RpWTxhXHxA%3D%3D" 950 -600 50 H I L CNN "Mouser Price/Stock"
+F9 "LM35DZ/NOPB" 950 -700 50 H I L CNN "Arrow Part Number"
+F10 "https://www.arrow.com/en/products/lm35dznopb/texas-instruments?region=nac" 950 -800 50 H I L CNN "Arrow Price/Stock"
+DRAW
+P 5 0 1 6 200 100 900 100 900 -200 200 -200 200 100 N
+X +VS 1 0 0 200 R 50 50 0 0 P
+X VOUT 2 1100 0 200 L 50 50 0 0 P
+X GND 3 0 -100 200 R 50 50 0 0 P
+ENDDRAW
+ENDDEF
+#
+# SamacSys_Parts_LMC6482AMJ_883
+#
+DEF SamacSys_Parts_LMC6482AMJ_883 IC 0 30 Y Y 1 F N
+F0 "IC" 2450 300 50 H V L CNN
+F1 "SamacSys_Parts_LMC6482AMJ_883" 2450 200 50 H V L CNN
+F2 "CDIP775W53P254L1016H508Q8" 2450 100 50 H I L CNN
+F3 "https://www.ti.com/lit/ds/symlink/lmc6482qml.pdf?ts=1622531930380&ref_url=https%253A%252F%252Fwww.ti.com%252Fstore%252Fti%252Fen%252Fp%252Fproduct%252F%253Fp%253DLMC6482AMJ%252F883" 2450 0 50 H I L CNN
+F4 "Operational Amplifiers - Op Amps Ultra-low Bias Current, Precision CMOS Rail-to-Rail Input and Output Operational Amplifier 8-CDIP -55 to 125" 2450 -100 50 H I L CNN "Description"
+F5 "5.08" 2450 -200 50 H I L CNN "Height"
+F6 "Texas Instruments" 2450 -300 50 H I L CNN "Manufacturer_Name"
+F7 "LMC6482AMJ/883" 2450 -400 50 H I L CNN "Manufacturer_Part_Number"
+F8 "595-LMC6482AMJ/883" 2450 -500 50 H I L CNN "Mouser Part Number"
+F9 "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/LMC6482AMJ-883?qs=ODt6DHbiBDz46PRe5MoCeA%3D%3D" 2450 -600 50 H I L CNN "Mouser Price/Stock"
+F10 "LMC6482AMJ/883" 2450 -700 50 H I L CNN "Arrow Part Number"
+F11 "https://www.arrow.com/en/products/lmc6482amj883/texas-instruments" 2450 -800 50 H I L CNN "Arrow Price/Stock"
+DRAW
+P 5 0 1 6 200 100 2400 100 2400 -400 200 -400 200 100 N
+X OUTPUTA 1 0 0 200 R 50 50 0 0 P
+X INVERTING_INPUTA 2 0 -100 200 R 50 50 0 0 P
+X NON-INVERTINGINPUTA 3 0 -200 200 R 50 50 0 0 P
+X V- 4 0 -300 200 R 50 50 0 0 P
+X NON-INVERTINGINPUTB 5 2600 -300 200 L 50 50 0 0 P
+X INVERTING_INPUTB 6 2600 -200 200 L 50 50 0 0 P
+X OUTPUTB 7 2600 -100 200 L 50 50 0 0 P
+X V+ 8 2600 0 200 L 50 50 0 0 P
+ENDDRAW
+ENDDEF
+#
+# SamacSys_Parts_MC7808CTG
+#
+DEF SamacSys_Parts_MC7808CTG IC 0 30 Y Y 1 F N
+F0 "IC" 850 300 50 H V L CNN
+F1 "SamacSys_Parts_MC7808CTG" 850 200 50 H V L CNN
+F2 "TO254P482X997X2018-3P" 850 100 50 H I L CNN
+F3 "http://www.onsemi.com/pub/Collateral/MC7800-D.PDF" 850 0 50 H I L CNN
+F4 "MC7808CTG, Voltage Regulator, 2.2A 8 V, +/-4%, 3-Pin TO-220" 850 -100 50 H I L CNN "Description"
+F5 "4.82" 850 -200 50 H I L CNN "Height"
+F6 "ON Semiconductor" 850 -300 50 H I L CNN "Manufacturer_Name"
+F7 "MC7808CTG" 850 -400 50 H I L CNN "Manufacturer_Part_Number"
+F8 "863-MC7808CTG" 850 -500 50 H I L CNN "Mouser Part Number"
+F9 "https://www.mouser.co.uk/ProductDetail/ON-Semiconductor/MC7808CTG?qs=%252B9%2Fcbd0IE0SYB0O7s%252B076A%3D%3D" 850 -600 50 H I L CNN "Mouser Price/Stock"
+F10 "MC7808CTG" 850 -700 50 H I L CNN "Arrow Part Number"
+F11 "https://www.arrow.com/en/products/mc7808ctg/on-semiconductor?region=nac" 850 -800 50 H I L CNN "Arrow Price/Stock"
+DRAW
+P 5 0 1 6 200 100 800 100 800 -300 200 -300 200 100 N
+X INPUT 1 0 0 200 R 50 50 0 0 I
+X GROUND 2 0 -100 200 R 50 50 0 0 W
+X OUTPUT 3 0 -200 200 R 50 50 0 0 O
+ENDDRAW
+ENDDEF
+#
+# SamacSys_Parts_OSR5JA3Z74A
+#
+DEF SamacSys_Parts_OSR5JA3Z74A LED 0 30 Y Y 1 F N
+F0 "LED" 500 350 50 H V L BNN
+F1 "SamacSys_Parts_OSR5JA3Z74A" 500 250 50 H V L BNN
+F2 "OSR5JA3Z74A" 500 150 50 H I L BNN
+F3 "http://akizukidenshi.com/download/ds/optosupply/OSXXXX3Z74A_VER_A1.pdf" 500 50 50 H I L BNN
+F4 "3mm round LED" 500 -50 50 H I L BNN "Description"
+F5 "5.3" 500 -150 50 H I L BNN "Height"
+F6 "OptoSupply" 500 -250 50 H I L BNN "Manufacturer_Name"
+F7 "OSR5JA3Z74A" 500 -350 50 H I L BNN "Manufacturer_Part_Number"
+DRAW
+P 2 0 1 6 100 0 200 0 N
+P 2 0 1 6 200 100 200 -100 N
+P 2 0 1 6 250 100 150 200 N
+P 2 0 1 6 350 100 250 200 N
+P 2 0 1 6 400 0 500 0 N
+P 4 0 1 10 200 0 400 100 400 -100 200 0 F
+P 4 0 1 10 210 170 180 140 150 200 210 170 F
+P 4 0 1 10 310 170 280 140 250 200 310 170 F
+X ~ 1 600 0 100 L 50 50 0 0 P
+X ~ 2 0 0 100 R 50 50 0 0 P
+ENDDRAW
+ENDDEF
+#
+# SamacSys_Parts_TB112-2-2-E-1
+#
+DEF SamacSys_Parts_TB112-2-2-E-1 J 0 30 Y Y 1 F N
+F0 "J" 650 300 50 H V L CNN
+F1 "SamacSys_Parts_TB112-2-2-E-1" 650 200 50 H V L CNN
+F2 "TB11222E1" 650 100 50 H I L CNN
+F3 "https://akizukidenshi.com/download/ds/alphaplus/TB112-2-x-x-x-x.pdf" 650 0 50 H I L CNN
+F4 "5.08mm Terminal Block" 650 -100 50 H I L CNN "Description"
+F5 "13" 650 -200 50 H I L CNN "Height"
+F6 "Alphaplus" 650 -300 50 H I L CNN "Manufacturer_Name"
+F7 "TB112-2-2-E-1" 650 -400 50 H I L CNN "Manufacturer_Part_Number"
+DRAW
+P 5 0 1 6 200 100 600 100 600 -200 200 -200 200 100 N
+X 1 1 0 0 200 R 50 50 0 0 P
+X 2 2 0 -100 200 R 50 50 0 0 P
+ENDDRAW
+ENDDEF
+#
+# SamacSys_Parts_TLP521-4
+#
+DEF SamacSys_Parts_TLP521-4 IC 0 30 Y Y 1 F N
+F0 "IC" 750 300 50 H V L CNN
+F1 "SamacSys_Parts_TLP521-4" 750 200 50 H V L CNN
+F2 "DIP762W60P254L1982H400Q16N" 750 100 50 H I L CNN
+F3 "http://isocom.com/wp-content/uploads/2018/03/dd93208-small-tlp521-1_2-4-240817.pdf" 750 0 50 H I L CNN
+F4 "ISOCOM - TLP521-4 - OPTOCOUPLER, DIP-16, QUAD, TR. O/P" 750 -100 50 H I L CNN "Description"
+F5 "4" 750 -200 50 H I L CNN "Height"
+F6 "Isocom" 750 -300 50 H I L CNN "Manufacturer_Name"
+F7 "TLP521-4" 750 -400 50 H I L CNN "Manufacturer_Part_Number"
+F8 "TLP521-4" 750 -700 50 H I L CNN "Arrow Part Number"
+F9 "https://www.arrow.com/en/products/tlp521-4/isocom" 750 -800 50 H I L CNN "Arrow Price/Stock"
+DRAW
+P 5 0 1 6 200 100 700 100 700 -1100 200 -1100 200 100 N
+X A1 1 0 0 200 R 50 50 0 0 P
+X C4 10 900 -900 200 L 50 50 0 0 P
+X E3 11 900 -700 200 L 50 50 0 0 P
+X C3 12 900 -600 200 L 50 50 0 0 P
+X E2 13 900 -400 200 L 50 50 0 0 P
+X C2 14 900 -300 200 L 50 50 0 0 P
+X E1 15 900 -100 200 L 50 50 0 0 P
+X C1 16 900 0 200 L 50 50 0 0 P
+X K1 2 0 -100 200 R 50 50 0 0 P
+X A2 3 0 -300 200 R 50 50 0 0 P
+X K2 4 0 -400 200 R 50 50 0 0 P
+X A3 5 0 -600 200 R 50 50 0 0 P
+X K3 6 0 -700 200 R 50 50 0 0 P
+X A4 7 0 -900 200 R 50 50 0 0 P
+X K4 8 0 -1000 200 R 50 50 0 0 P
+X E4 9 900 -1000 200 L 50 50 0 0 P
+ENDDRAW
+ENDDEF
+#
+# SamacSys_Parts_TLP621
+#
+DEF SamacSys_Parts_TLP621 IC 0 30 Y Y 1 F N
+F0 "IC" 1350 300 50 H V L CNN
+F1 "SamacSys_Parts_TLP621" 1350 200 50 H V L CNN
+F2 "DIP762W60P254L458H485Q4N" 1350 100 50 H I L CNN
+F3 "http://toshiba.semicon-storage.com/info/docget.jsp?did=16778&prodName=TLP621.pdf" 1350 0 50 H I L CNN
+F4 "Transistor Output Optocouplers 55Vceo 5000Vrms" 1350 -100 50 H I L CNN "Description"
+F5 "4.85" 1350 -200 50 H I L CNN "Height"
+F6 "Toshiba" 1350 -300 50 H I L CNN "Manufacturer_Name"
+F7 "TLP621" 1350 -400 50 H I L CNN "Manufacturer_Part_Number"
+F8 "757-TLP621" 1350 -500 50 H I L CNN "Mouser Part Number"
+F9 "https://www.mouser.co.uk/ProductDetail/Toshiba/TLP621?qs=WswyaqNi8z3nDNlX01QpHA%3D%3D" 1350 -600 50 H I L CNN "Mouser Price/Stock"
+DRAW
+P 5 0 1 6 200 100 1300 100 1300 -200 200 -200 200 100 N
+X ANODE 1 0 0 200 R 50 50 0 0 P
+X CATHODE 2 0 -100 200 R 50 50 0 0 P
+X EMITTER 3 1500 -100 200 L 50 50 0 0 P
+X COLLECTOR 4 1500 0 200 L 50 50 0 0 P
+ENDDRAW
+ENDDEF
+#
+# myLib_MCP1402T_DIP
+#
+DEF myLib_MCP1402T_DIP IC 0 30 Y Y 1 F N
+F0 "IC" 950 300 50 H V L CNN
+F1 "myLib_MCP1402T_DIP" 950 200 50 H V L CNN
+F2 "SOT95P270X145-5N" 950 100 50 H I L CNN
+F3 "http://docs-emea.rs-online.com/webdocs/0d0d/0900766b80d0d3af.pdf" 950 0 50 H I L CNN
+F4 "MOSFET Driver 0.5A High-Speed 18V SOT23" 950 -100 50 H I L CNN "Description"
+F5 "1.45" 950 -200 50 H I L CNN "Height"
+F6 "Microchip" 950 -300 50 H I L CNN "Manufacturer_Name"
+F7 "MCP1402T-E/OT" 950 -400 50 H I L CNN "Manufacturer_Part_Number"
+F8 "579-MCP1402T-E/OT" 950 -500 50 H I L CNN "Mouser Part Number"
+F9 "https://www.mouser.co.uk/ProductDetail/Microchip-Technology/MCP1402T-E-OT?qs=aE5D7Pt6ky3dpBpieBLY3A%3D%3D" 950 -600 50 H I L CNN "Mouser Price/Stock"
+F10 "MCP1402T-E/OT" 950 -700 50 H I L CNN "Arrow Part Number"
+F11 "https://www.arrow.com/en/products/mcp1402t-eot/microchip-technology" 950 -800 50 H I L CNN "Arrow Price/Stock"
+DRAW
+P 5 0 1 6 200 100 900 100 900 -300 200 -300 200 100 N
+X GND 1 0 0 200 R 50 50 0 0 P
+X VDD 2 0 -100 200 R 50 50 0 0 P
+X IN 3 0 -200 200 R 50 50 0 0 P
+X GND1 4 1100 -200 200 L 50 50 0 0 P
+X NC 5 1100 -100 200 L 50 50 0 0 N
+X OUT 6 1100 0 200 L 50 50 0 0 P
+ENDDRAW
+ENDDEF
+#
+# myLib_SwitchScienceSSCI-014076
+#
+DEF myLib_SwitchScienceSSCI-014076 LCD 0 40 Y Y 1 F N
+F0 "LCD" -450 400 50 H V C CNN
+F1 "myLib_SwitchScienceSSCI-014076" 0 300 50 H V C CNN
+F2 "" 0 -250 50 H I C CNN
+F3 "" 0 -250 50 H I C CNN
+DRAW
+S -500 -300 500 250 0 1 0 N
+S -450 -250 450 200 0 1 0 N
+X XRESET(NC) 1 -300 -400 100 U 50 50 1 1 I
+X Vdd 2 -150 -400 100 U 50 50 1 1 W
+X Vss 3 0 -400 100 U 50 50 1 1 W
+X SDA 4 150 -400 100 U 50 50 1 1 B
+X SCL 5 300 -400 100 U 50 50 1 1 B
+ENDDRAW
+ENDDEF
+#
+# power_+12V
+#
+DEF power_+12V #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -150 50 H I C CNN
+F1 "power_+12V" 0 140 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 0 1 0 -30 50 0 100 N
+P 2 0 1 0 0 0 0 100 N
+P 2 0 1 0 0 100 30 50 N
+X +12V 1 0 0 0 U 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# power_+1V8
+#
+DEF power_+1V8 #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -150 50 H I C CNN
+F1 "power_+1V8" 0 140 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 0 1 0 -30 50 0 100 N
+P 2 0 1 0 0 0 0 100 N
+P 2 0 1 0 0 100 30 50 N
+X +1V8 1 0 0 0 U 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# power_+3.3V
+#
+DEF power_+3.3V #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -150 50 H I C CNN
+F1 "power_+3.3V" 0 140 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+ALIAS +3.3V
+DRAW
+P 2 0 1 0 -30 50 0 100 N
+P 2 0 1 0 0 0 0 100 N
+P 2 0 1 0 0 100 30 50 N
+X +3V3 1 0 0 0 U 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# power_+5V
+#
+DEF power_+5V #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -150 50 H I C CNN
+F1 "power_+5V" 0 140 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 0 1 0 -30 50 0 100 N
+P 2 0 1 0 0 0 0 100 N
+P 2 0 1 0 0 100 30 50 N
+X +5V 1 0 0 0 U 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# power_+8V
+#
+DEF power_+8V #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -150 50 H I C CNN
+F1 "power_+8V" 0 140 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 0 1 0 -30 50 0 100 N
+P 2 0 1 0 0 0 0 100 N
+P 2 0 1 0 0 100 30 50 N
+X +8V 1 0 0 0 U 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# power_GND
+#
+DEF power_GND #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -250 50 H I C CNN
+F1 "power_GND" 0 -150 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 6 0 1 0 0 0 0 -50 50 -50 0 -100 -50 -50 0 -50 N
+X GND 1 0 0 0 D 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# power_GNDD
+#
+DEF power_GNDD #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -250 50 H I C CNN
+F1 "power_GNDD" 0 -125 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+S -50 -60 50 -80 0 1 10 F
+P 2 0 1 0 0 0 0 -60 N
+X GNDD 1 0 0 0 D 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# power_GNDPWR
+#
+DEF power_GNDPWR #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -200 50 H I C CNN
+F1 "power_GNDPWR" 0 -130 50 H V C CNN
+F2 "" 0 -50 50 H I C CNN
+F3 "" 0 -50 50 H I C CNN
+DRAW
+P 2 0 1 0 0 -50 0 0 N
+P 3 0 1 8 -40 -50 -50 -80 -50 -80 N
+P 3 0 1 8 -20 -50 -30 -80 -30 -80 N
+P 3 0 1 8 0 -50 -10 -80 -10 -80 N
+P 3 0 1 8 20 -50 10 -80 10 -80 N
+P 3 0 1 8 40 -50 -40 -50 -40 -50 N
+P 4 0 1 8 40 -50 30 -80 30 -80 30 -80 N
+X GNDPWR 1 0 0 0 D 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# power_PWR_FLAG
+#
+DEF power_PWR_FLAG #FLG 0 0 N N 1 F P
+F0 "#FLG" 0 75 50 H I C CNN
+F1 "power_PWR_FLAG" 0 150 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 6 0 1 0 0 0 0 50 -40 75 0 100 40 75 0 50 N
+X pwr 1 0 0 0 U 50 50 0 0 w
+ENDDRAW
+ENDDEF
+#
+#End Library
